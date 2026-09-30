@@ -1,0 +1,105 @@
+[
+  {
+    "query": "1. My TechCorp A15G tablet screen flashes and then goes completely blank whenever I tap to open an email in Gmail, and after it works for a short time it goes blank again.",
+    "response": {
+      "contexts": [
+        {
+          "goal": "Troubleshoot screen blanking issue",
+          "title": "Screen Blanking Issue",
+          "score": 0.95,
+          "actions": [
+            {
+              "actionName": "Force Restart Device",
+              "description": "A force restart can clear temporary software glitches.",
+              "stepGroups": [
+                {
+                  "steps": [
+                    "Press and hold the Power and Volume down buttons simultaneously."
+                  ]
+                }
+              ],
+              "category": "manual"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "query": "My Nexa X1 screen turns completely blank or white and no text appears when I search for a stock price or use the Quick Assist app, and it happens with other apps too.",
+    "response": {
+      "contexts": [
+        {
+          "goal": "Resolve charging and battery issue",
+          "title": "Battery Charging Error",
+          "score": 0.92,
+          "actions": [
+            {
+              "actionName": "Clean Charging Port",
+              "description": "Ensure there is no debris in the charging port.",
+              "stepGroups": [
+                {
+                  "steps": [
+                    "Use a soft, dry brush to gently clean the charging port."
+                  ]
+                }
+              ],
+              "category": "manual"
+            },
+            {
+              "actionName": "Check Battery Health",
+              "description": "Run diagnostic on battery health.",
+              "stepGroups": [
+                {
+                  "steps": [
+                    "Navigate to Settings > Battery.",
+                    "Tap on Battery Health."
+                  ],
+                  "actionableDeeplink": {
+                    "deeplink": "voiceassist://masked/act/e92a831515",
+                    "description": "Open Battery Settings",
+                    "message": "Check Battery"
+                  }
+                }
+              ],
+              "category": "auto"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "query": "My Nexa Fold X1 screen went completely black, so I can't see or interact with the phone, and I'm unable to use Data Transfer or any other method to transfer my data.",
+    "response": {
+      "contexts": [
+        {
+          "goal": "Fix Wi-Fi connection drops",
+          "title": "Network Connectivity Issue",
+          "score": 0.98,
+          "actions": [
+            {
+              "actionName": "Reset Network Settings",
+              "description": "Resetting network settings can resolve persistent Wi-Fi drops.",
+              "stepGroups": [
+                {
+                  "steps": [
+                    "Navigate to Settings > General Management.",
+                    "Tap Reset.",
+                    "Tap Reset network settings."
+                  ],
+                  "actionableDeeplink": {
+                    "deeplink": "voiceassist://masked/act/1234abcd",
+                    "description": "Reset Network Settings",
+                    "message": "Reset Network"
+                  }
+                }
+              ],
+              "category": "auto"
+            }
+          ]
+        }
+      ]
+    }
+  }
+]
